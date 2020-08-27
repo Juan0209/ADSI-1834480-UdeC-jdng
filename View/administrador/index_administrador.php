@@ -238,13 +238,13 @@ $i=0;
                               <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                               Perfil
                           </a>
-                          <div class="dropdown-menu align-baseline">
+                      <!--<div class="dropdown-menu align-baseline">
                               <a class="dropdown-item" href="#">Action</a>
                               <a class="dropdown-item" href="#">Another action</a>
                               <a class="dropdown-item" href="#">Something else here</a>
                               <div class="dropdown-divider"></div>
                               <a class="dropdown-item" href="#">Separated link</a>
-                          </div>
+                          </div>-->
 
                         <a class="dropdown-item" href="#" id="configuracion">
                           <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
