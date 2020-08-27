@@ -381,8 +381,6 @@ class Administrador
 
             $registro = $stm->fetchAll(PDO::FETCH_ASSOC);
 
-
-
             if ($registro == null) {
 
                 $stm = $this->pdo->prepare("INSERT INTO administrativos_jdng (name, lastName ,identificacion) VALUES (?,?,?)");

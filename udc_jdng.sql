@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-08-2020 a las 03:06:43
+-- Tiempo de generación: 27-08-2020 a las 06:47:52
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.5
 
@@ -39,8 +39,8 @@ CREATE TABLE `administrativos_jdng` (
 --
 
 INSERT INTO `administrativos_jdng` (`id`, `identificacion`, `name`, `lastName`) VALUES
-(1, 1234567890, 'MIGUEL', 'ROMERO PEÑARANDA'),
-(2, 123456789, 'User Admin', 'administrativo');
+(2, 123456789, 'User Admin', 'administrativo'),
+(6, 1234567890, 'MIGUEL', 'ROMERO PEÑARANDA');
 
 -- --------------------------------------------------------
 
@@ -301,8 +301,7 @@ CREATE TABLE `encuesta_jdng` (
 --
 
 INSERT INTO `encuesta_jdng` (`id`, `nombre`, `apellido`, `edad`, `genero`, `estado_civil`, `nivel_ingresos`, `programa_formacion`, `asignaturas_matriculadas`, `tipo_institucion_procedencia`, `calificacion_nivel_educacion`, `fecha_graduacion`, `localidad`, `barrio`, `direccion`, `tipo_vivienda`, `nivel_educativo_padre`, `nivel_educativo_madre`, `profecion_padre`, `profecion_madre`) VALUES
-(1, 'Juan', 'García', '2002-02-14', 1, 8, 2, 5, 7, 3, 4, 2008, 2, 102, 'xxxxxxxxxxxxxx', 3, 3, 2, 'abc', 'abc'),
-(21, 'User Admin', 'Mujer', '2020-08-01', 2, 9, 3, 2, 1, 1, 1, 2016, 1, 7, 'xxxxxxx', 3, 4, 3, 'Empresario', 'Empresaria');
+(1, 'Juan', 'García', '2002-02-14', 1, 8, 2, 5, 7, 3, 4, 2008, 2, 102, 'xxxxxxxxxxxxxx', 3, 3, 2, 'abc', 'abc');
 
 -- --------------------------------------------------------
 
@@ -372,7 +371,7 @@ INSERT INTO `estudiantes_jdng` (`id`, `identificacion`, `name`, `lastName`) VALU
 (22, 1542016608, 'YORYANIS JIMENEZ', 'JIMENEZ RAMOS'),
 (23, 1579263822, 'YARLEIDIS KATERIN', 'JULIO GUZMAN'),
 (24, 1501149990, 'LORENA LOZANO', 'LOZANO RIVERO'),
-(25, 1234567890, 'User Admin', 'Estudiante Hombre'),
+(25, 123456, 'User Admin', 'Estudiante Hombre'),
 (26, 123, 'User Admin', 'Estudiante Mujer');
 
 -- --------------------------------------------------------
@@ -503,10 +502,8 @@ CREATE TABLE `registro_jdng` (
 --
 
 INSERT INTO `registro_jdng` (`id`, `identificacion`, `name`, `lastName`, `phone`, `email`, `password`, `rol`, `encuesta`) VALUES
-(1, 1234567890, 'User Admin', 'Estudiante Hombre', 123, 'admin2@hotmail.com', '123', 1, 1),
-(2, 123456789, 'User Admin', 'Administrativo', 123, 'admin@hotmail.com', '123', 2, 0),
-(19, 123, 'User Admin', 'Mujer', 123321, 'admin3@hotmail.com', '123', 1, 21),
-(23, 123, 'Prueba', 'Admin', 1001001, 'admin111@hotmail.com', '123', 1, 0);
+(1, 123456, 'User Admin', 'Estudiante Hombre', 123, 'admin2@hotmail.com', '123', 1, 1),
+(2, 123456789, 'User Admin', 'Administrativo', 123, 'admin@hotmail.com', '123', 2, 0);
 
 -- --------------------------------------------------------
 
@@ -645,7 +642,7 @@ ALTER TABLE `tipo_vivienda_jdng`
 -- AUTO_INCREMENT de la tabla `administrativos_jdng`
 --
 ALTER TABLE `administrativos_jdng`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `barrio_jdng`
@@ -711,7 +708,7 @@ ALTER TABLE `programa_formacion_jdng`
 -- AUTO_INCREMENT de la tabla `registro_jdng`
 --
 ALTER TABLE `registro_jdng`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT de la tabla `tipo_institucion_procedencia_jdng`
